@@ -24,7 +24,7 @@ class Log:
                 atexit.register(call)
             except IOError:
                 self.save = False
-                self.error("Unable to open outFile: " + outFile + "\n" + sys.exc_info()[0])
+                self.error("Unable to open outFile: " + outFile + "\n" + str(sys.exc_info()[0]))
 
     def __save(self, message):
         if self.save:
