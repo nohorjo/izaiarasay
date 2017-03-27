@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 logFile.log
+=======
+settings.conf
+*.pyc
+.idea/dictionaries .idea/inspectionProfiles .idea/izaiarasay.iml .idea/misc.xml .idea/modules.xml .idea/vcs.xml .idea/workspace.xml
+>>>>>>> acbd47dfffd591244b21944630d938814f72f6b8
