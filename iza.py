@@ -67,7 +67,7 @@ def listFilesRecursively(startDir):
                 if not exclude:
                     rtnFilesList.append(fullFile)
             elif os.path.isdir(fullFile):
-                if fullFile not in excludedDirs:
+                if fullFile not in excludedDirs and file not in excludedDirs:
                     rtnFilesList.extend(listFilesRecursively(fullFile))
     except PermissionError:
         log.error("Permission denied for:" + startDir)
