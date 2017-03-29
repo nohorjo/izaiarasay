@@ -157,4 +157,4 @@ ENV/
 .ropeproject
 
 # End of https://www.gitignore.io/api/python,pycharm
-logFile.log
+.log
