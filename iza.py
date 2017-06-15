@@ -124,7 +124,10 @@ for directory in directories:
 
 # Count the size of the backup
 for foundFile in listOfFiles:
-    backupKBytes += (os.path.getsize(foundFile) / 1024)
+    try:
+        backupKBytes += (os.path.getsize(foundFile) / 1024)
+    except FileNotFoundError:
+        pass
 
 # Check available space1
 if backupKBytes > diskSpaceKBytes - backupDriveReserveKBytes:
